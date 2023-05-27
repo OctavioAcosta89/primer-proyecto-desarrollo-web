@@ -1,0 +1,31 @@
+
+/*Navbar*/
+.navBackground{
+    background-color: black;
+}
+.pNavbar{
+    color: #ffffff;
+}
+i{
+    font-size: 48px;
+    margin: 5px;
+    color: black;
+}
+/*Footer*/
+footer{
+    background-color: rgb(204, 204, 204);
+}
+.logoRedesSociales{
+    display:flex;
+    justify-content: center;
+}
+.logoRedesSociales2{
+    padding: 16px;
+}
+.pFooter{
+    padding: 24px;
+}
+h3{
+    display: flex;
+    justify-content: center;
+}
