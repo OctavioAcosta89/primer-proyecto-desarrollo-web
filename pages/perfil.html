@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Hoja de estilos personalizada-->
+    <!-- Hoja de estilos personalizada y favicon-->
     <link rel="stylesheet" type="text/css" href="../styles//styles.css">
     <link rel="icon" type="image/x-icon" href="../images/icono.ico">
     <!--bootstrap-->
@@ -17,9 +17,9 @@
 </head>
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid navBackground">
-            <a class="navbar-brand" href="/pages/index.html">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
                 <img src="../images/logonew.png" alt="Logo" width="72" height="72" class="d-inline-block align-text-top">
             </a> 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,19 +28,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active textColor" aria-current="page" href="/index.html"><p class="pNavbar">Home</p></a>
+                    <a class="nav-link active textColor" aria-current="page" href="../index.html"><p class="pNavbar">Home</p></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./pages/recursosadicionales.html"><p class="pNavbar"> Recursos adicionales</p></a>
+                    <a class="nav-link active" aria-current="page" href="recursosadicionales.html"><p class="pNavbar"> Recursos adicionales</p></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="./pages/conciertos.html"><p class="pNavbar">Conciertos</p></a>
+                    <a class="nav-link active" href="conciertos.html"><p class="pNavbar">Conciertos</p></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./pages/contacto.html"><p class="pNavbar">Contacto</p></a>
+                    <a class="nav-link active" aria-current="page" href="contacto.html"><p class="pNavbar">Contacto</p></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./pages/perfil.html"><p class="pNavbar">Mi perfil</p></a>
+                    <a class="nav-link active" aria-current="page" href="perfil.html"><p class="pNavbar">Mi perfil</p></a>
                 </li>
             </ul>
             <form class="d-flex" role="search">
@@ -50,23 +50,127 @@
           </div>
         </div>
     </nav> <!--Termina el navbar-->
+    <section class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Nombre_de _Usuario</h3>
+            </div>
+        </div>
+    </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <main class="container"> <!--Aqui van las listas de reproduccion-->
+        <div class="row">
+            <div class="col-6">
+                <div class="row text-center">
+                    <h2>Listas de reproducción</h2>
+                </div>
+                <div class="row"> <!-- aqui van las img de listas de reproducción-->
+                    <div class="col-3 pruebahover">
+                        <img src="../images/melodia.png" class="img-fluid rounded-3" alt="Lista melodia">
+                    </div>
+                    <div class="col-3 pruebahover">
+                        <img src="../images/armonia.png" class="img-fluid rounded-3" alt="Lista armonía">
+                    </div>
+                    <div class="col-3 pruebahover">
+                        <img src="../images/escalas.png" class="img-fluid rounded-3" alt="Lista escalas">
+                    </div>
+                    <div class="col-3 pruebahover">
+                        <img src="../images/ritmo.png" class="img-fluid rounded-3" alt="Lista ritmo">
+                    </div>
+                    
+                    <div class="container">
+                        <div class="row mt-5">
+                            <h2> Progresos en las listas</h2> <!-- Aquí también podemos hacer una grid de 4x2 -->
+                        </div>
+                        <div class="row text-center">
+                          <div class="col-sm-6"><H3>Lista de armonía</H3></div>
+                          <div class="col-sm-6"><h3>Lista de ritmo</h3></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 text-center">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <div class="col-sm-6 text-center">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                          <div class="col-sm-6"><h3>Lista de melodia</h3></div>
+                          <div class="col-sm-6"><h3>Lista de escalas</h3></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 text-center">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <div class="col-sm-6 text-center">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col text-center">
+                        <h2>Logros</h2> <!-- Falta crearle un hover que diga qué logro debe cumplir el usuario-->
+                    </div>
+                    <div class="container text-center mt-3">
+                        <div class="row">
+                          <div class="col-sm-2"><i class="bi bi-boombox-fill"></i></div>
+                          <div class="col-sm-2"><i class="bi bi-vinyl-fill"></i></div>
+                          <div class="col-sm-2"><i class="bi bi-music-player-fill"></i></div>
+                          <div class="col-sm-2"><i class="bi bi-collection-play-fill"></i></div>
+                          <div class="col-sm-2"><i class="bi bi-ear-fill"></i></div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-2"><i class="bi bi-earbuds"></i></div>
+                          <div class="col-sm-2"><i class="bi bi-fast-forward-btn-fill"></i></div>
+                          <div class="col-sm-2"><i class="bi bi-file-pdf-fill"></i></div>
+                          <div class="col-sm-2"><i class="bi bi-film"></i></div>
+                          <div class="col-sm-2"><i class="bi bi-fire"></i></div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-2"><i class="bi bi-headphones"></i></div>
+                          <div class="col-sm-2"><i class="bi bi-mic-fill"></i></div>
+                          <div class="col-sm-2"><i class="bi bi-music-note-beamed"></i></div>
+                          <div class="col-sm-2"><i class="bi bi-music-note"></i></div>
+                          <div class="col-sm-2"><i class="bi bi-play-circle-fill"></i></div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-2"><i class="bi bi-rocket-takeoff-fill"></i></div>
+                          <div class="col-sm-2"><i class="bi bi-tv-fill"></i></div>
+                          <div class="col-sm-2"><i class="bi bi-balloon-heart-fill"></i></div>
+                          <div class="col-sm-2"><i class="bi bi-camera-video-fill"></i></div>
+                          <div class="col-sm-2"><i class="bi bi-cash-coin"></i></div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-2"><i class="bi bi-camera-reels-fill"></i></div>
+                          <div class="col-sm-2"><i class="bi bi-arrow-through-heart-fill"></i></div>
+                          <div class="col-sm-2"><i class="bi bi-calendar2-date-fill"></i></div>
+                          <div class="col-sm-2"><i class="bi bi-camera-fill"></i></div>
+                          <div class="col-sm-2"><i class="bi bi-chat-heart-fill"></i></div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer>
         <div class="pFooter">
             <p>© 2023</p> 

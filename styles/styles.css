@@ -10,6 +10,10 @@ body{
 .pNavbar{
     color: #ffffff;
 }
+.collapseBackgroundColor.navbar-toggler{
+    border-color: #ffffff;
+
+}
 i{
     font-size: 32px;
     margin: 5px;
