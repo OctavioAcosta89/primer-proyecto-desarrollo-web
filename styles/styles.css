@@ -37,3 +37,14 @@ h3{
     display: flex;
     justify-content: center;
 }
+.contenedor1{
+    border: 65px;
+    border-color: red;
+}
+.contenedor2{
+    border: blue;
+}
+.contenedor3{
+    border: green;
+
+}
