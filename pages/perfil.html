@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Hoja de estilos personalizada y favicon-->
     <link rel="stylesheet" type="text/css" href="../styles//styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles//scss.css">
     <link rel="icon" type="image/x-icon" href="../images/icono.ico">
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
     <!--Boostrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
+    <!--Titulo-->
     <title>Home Ukelele by Oct!</title>
+    <!--Tooltips-->
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
 </head>
 <body>
     <!--Navbar-->
@@ -111,39 +116,39 @@
                 </div>
                 <div class="container mt-3">
                     <div class="d-flex">
-                      <div class="col-sm-2"><i class="bi bi-boombox-fill"></i></div>
-                      <div class="col-sm-2"><i class="bi bi-vinyl-fill"></i></div>
-                      <div class="col-sm-2"><i class="bi bi-music-player-fill"></i></div>
-                      <div class="col-sm-2"><i class="bi bi-collection-play-fill"></i></div>
-                      <div class="col-sm-2"><i class="bi bi-ear-fill"></i></div>
+                      <div class="col-sm-2"><i class="bi bi-boombox-fill" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i></div>
+                      <div class="col-sm-2"><i class="bi bi-vinyl-fill tip"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i></div>
+                      <div class="col-sm-2"><i class="bi bi-music-player-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i></div>
+                      <div class="col-sm-2"><i class="bi bi-collection-play-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i></div>
+                      <div class="col-sm-2"><i class="bi bi-ear-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i></div>
                     </div>
                     <div class="d-flex">
-                      <div class="col-sm-2"><i class="bi bi-earbuds"></i></div>
-                      <div class="col-sm-2"><i class="bi bi-fast-forward-btn-fill"></i></div>
-                      <div class="col-sm-2"><i class="bi bi-file-pdf-fill"></i></div>
-                      <div class="col-sm-2"><i class="bi bi-film"></i></div>
-                      <div class="col-sm-2"><i class="bi bi-fire"></i></div>
+                      <div class="col-sm-2"><i class="bi bi-earbuds"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i></div>
+                      <div class="col-sm-2"><i class="bi bi-fast-forward-btn-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i></div>
+                      <div class="col-sm-2"><i class="bi bi-file-pdf-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i></div>
+                      <div class="col-sm-2" aria-disabled="true"><i class="bi bi-film"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i></div>
+                      <div class="col-sm-2"><i class="bi bi-fire"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i></div>
                     </div>
                     <div class="d-flex">
-                      <div class="col-sm-2"><i class="bi bi-headphones"></i></div>
-                      <div class="col-sm-2"><i class="bi bi-mic-fill"></i></div>
-                      <div class="col-sm-2"><i class="bi bi-music-note-beamed"></i></div>
-                      <div class="col-sm-2"><i class="bi bi-music-note"></i></div>
-                      <div class="col-sm-2"><i class="bi bi-play-circle-fill"></i></div>
+                      <div class="col-sm-2"><i class="bi bi-headphones"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i></div>
+                      <div class="col-sm-2"><i class="bi bi-mic-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i></div>
+                      <div class="col-sm-2"><i class="bi bi-music-note-beamed"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i></div>
+                      <div class="col-sm-2"><i class="bi bi-music-note"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i></div>
+                      <div class="col-sm-2"><i class="bi bi-play-circle-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i></div>
                     </div>
                     <div class="d-flex">
-                      <div class="col-sm-2"><i class="bi bi-rocket-takeoff-fill"></i></div>
-                      <div class="col-sm-2"><i class="bi bi-tv-fill"></i></div>
-                      <div class="col-sm-2"><i class="bi bi-balloon-heart-fill"></i></div>
-                      <div class="col-sm-2"><i class="bi bi-camera-video-fill"></i></div>
-                      <div class="col-sm-2"><i class="bi bi-cash-coin"></i></div>
+                      <div class="col-sm-2"><i class="bi bi-rocket-takeoff-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i></div>
+                      <div class="col-sm-2"><i class="bi bi-tv-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i></div>
+                      <div class="col-sm-2"><i class="bi bi-balloon-heart-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i></div>
+                      <div class="col-sm-2"><i class="bi bi-camera-video-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i></div>
+                      <div class="col-sm-2"><i class="bi bi-cash-coin"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i></div>
                     </div>
                     <div class="d-flex">
-                      <div class="col-sm-2"><i class="bi bi-camera-reels-fill"></i></div>
-                      <div class="col-sm-2"><i class="bi bi-arrow-through-heart-fill"></i></div>
-                      <div class="col-sm-2"><i class="bi bi-calendar2-date-fill"></i></div>
-                      <div class="col-sm-2"><i class="bi bi-camera-fill"></i></div>
-                      <div class="col-sm-2"><i class="bi bi-chat-heart-fill"></i></div>
+                      <div class="col-sm-2"><i class="bi bi-camera-reels-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO.""></i></div>
+                      <div class="col-sm-2"><i class="bi bi-arrow-through-heart-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i></div>
+                      <div class="col-sm-2"><i class="bi bi-calendar2-date-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i></div>
+                      <div class="col-sm-2"><i class="bi bi-camera-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i></div>
+                      <div class="col-sm-2"><i class="bi bi-chat-heart-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i></div>
                     </div>
                   </div>
             </div><!-- fin de Logros-->
@@ -172,5 +177,10 @@
             <a href="https://www.youtube.com"><i class="bi bi-youtube"></i></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
 </html>
