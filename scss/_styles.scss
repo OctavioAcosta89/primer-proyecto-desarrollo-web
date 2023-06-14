@@ -1,65 +1,38 @@
 /*Body*/
 body{
-    background-color: beige;
+    background-color: rgb(235, 235, 20);
 }
+/*Footer*/
+.footer{
+    background-color: rgb(204, 204, 204);
+    &__paragraph{
+        padding: 24px;
+        font-size: 18px;
+    }
+    &__redes{
+        display:flex;
+        justify-content: center;
+    }
+    &__redeslogo{
+        padding: 16px;
+    }
+    &__fallow{
+        display: flex;
+        justify-content: center;
+        font-size: 32px;
 
-/*Navbar*/
-.navBackground{
-    background-color: black;
-}
-.pNavbar{
-    color: #ffffff;
-}
-.collapseBackgroundColor.navbar-toggler{
-    border-color: #ffffff;
 
+    }
 }
 i{
     font-size: 32px;
     margin: 5px;
     color: black;
 }
-/*Footer*/
-footer{
-    background-color: rgb(204, 204, 204);
+.pNavbar{
+    color: #34ec06;
 }
-.logoRedesSociales{
-    display:flex;
-    justify-content: center;
-}
-.logoRedesSociales2{
-    padding: 16px;
-}
-.pFooter{
-    padding: 24px;
-}
-h3{
-    display: flex;
-    justify-content: center;
-}
-.contenedor1{
-    border: 65px;
-    border-color: red;
-}
-.contenedor2{
-    border: blue;
-}
-.contenedor3{
-    border: green;
-
-}
-/*Perfi*/
-.listas{
-    border:10px;
-}
-.listasHover:hover {
-    border-width: 10px;
-    border-color: red;
-
-}
-ul{
-    list-style: none;
-    border: 0px;
-    padding: 0px;
+.collapseBackgroundColor.navbar-toggler{
+    border-color: #c53131;
 
 }
