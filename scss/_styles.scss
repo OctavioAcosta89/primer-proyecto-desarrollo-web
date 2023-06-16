@@ -29,10 +29,32 @@ i{
     margin: 5px;
     color: black;
 }
-.pNavbar{
-    color: #34ec06;
+.concert{
+    background-color: white;
+    &__portada{
+        margin: 1%;
+        border-color: none;
+    }
+    &__portada:hover{
+        transform: scale(1.2,1.2);
+    }
 }
-.collapseBackgroundColor.navbar-toggler{
-    border-color: #c53131;
+.colores{
+    background-color: red;
+}
+/*Recursos adicionales tabla*/
+
+.Tablarecursos{
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+    &__filas{
+        border: 1px solid black;
+        text-align: center;
+    &:hover{
+        background-color: violet;
+    }    
+    }
+
 
 }
