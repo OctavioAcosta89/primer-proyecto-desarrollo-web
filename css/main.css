@@ -57,4 +57,22 @@ i {
 }
 .Tablarecursos__filas:hover {
   background-color: violet;
+}
+
+/*ciciertouno*/
+.videouno {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedorconcierto {
+  display: flex;
+}
+.contenedorconcierto__lista {
+  display: flex;
+  margin: 8px;
+}
+
+ul {
+  list-style: none;
 }/*# sourceMappingURL=main.css.map */
