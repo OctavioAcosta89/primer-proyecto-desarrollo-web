@@ -1,7 +1,6 @@
 /*Body*/
-body{
+.colorfondo{
     background-color: $color5;
-    
 }
 main{
     background-color: #ffffff;
@@ -48,7 +47,12 @@ i{
     color: black;
 }
 .concert{
-    background-color: white;
+    border-radius: 20px;
+    margin: 16px;
+    background-color: $color4;
+    &__titulo{
+        margin: 16px;
+    }
     &__portada{
         margin: 1.5%;
         border-color: none;
@@ -56,9 +60,6 @@ i{
     &__portada:hover{
         transform: scale(1.2,1.2);
     }
-}
-.tituloconcert{
-    margin: 15px;
 }
 .colores{
     background-color: red;
@@ -68,7 +69,7 @@ i{
 .Tablarecursos{
     display: flex;
     justify-content: center;
-    margin: 8px;
+    padding: 16px;
     &__filas{
         border: 1px solid black;
         text-align: center;
@@ -89,7 +90,6 @@ i{
         margin: 8px;
     
     }
-
 }
 ul {
     list-style: none;
@@ -121,4 +121,8 @@ ul {
     padding: 5px;
     border-radius: 20%;
     
+}
+a:link{
+    text-decoration: none;
+    color: $color1;
 }

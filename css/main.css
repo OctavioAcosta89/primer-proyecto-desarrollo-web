@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*Body*/
-body {
+.colorfondo {
   background-color: #e3c0ff;
 }
 
@@ -49,7 +49,12 @@ i {
 }
 
 .concert {
-  background-color: white;
+  border-radius: 20px;
+  margin: 16px;
+  background-color: #9687ed;
+}
+.concert__titulo {
+  margin: 16px;
 }
 .concert__portada {
   margin: 1.5%;
@@ -57,10 +62,6 @@ i {
 }
 .concert__portada:hover {
   transform: scale(1.2, 1.2);
-}
-
-.tituloconcert {
-  margin: 15px;
 }
 
 .colores {
@@ -71,7 +72,7 @@ i {
 .Tablarecursos {
   display: flex;
   justify-content: center;
-  margin: 8px;
+  padding: 16px;
 }
 .Tablarecursos__filas {
   border: 1px solid black;
@@ -124,4 +125,9 @@ ul {
   background-color: #575599;
   padding: 5px;
   border-radius: 20%;
+}
+
+a:link {
+  text-decoration: none;
+  color: #000014;
 }/*# sourceMappingURL=main.css.map */
