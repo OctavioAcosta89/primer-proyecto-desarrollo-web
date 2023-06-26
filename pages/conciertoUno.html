@@ -15,7 +15,7 @@
 
     <title>Home Ukelele by Oct!</title>
 </head>
-<body>
+<body class="colorfondo">
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -53,14 +53,16 @@
     <div>
         <h1 class="text-center">Título del concierto</h1>
     </div>
-    <main class="row">
-        <section class="col-7 videouno" > <!--Video-->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ySa67e0jKNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <main class="contenedorvideo">
+        <section class="contenedorvideo__rep">
+            <div class="contenedorvideo__rep__divvideo"><!--Video-->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ySa67e0jKNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
         </section>
-        <section class="col-5 contenedorconcierto"><!--Lista de rep-->
-            <ul>
+        <section class="contenedorvideo__lista">
+            <ul class="contenedorvideo__lista__ul">
                 <li>
-                    <div class="contenedorconcierto__lista">
+                    <div class="contenedorvideo__lista__ul__li">
                         <div>
                            <img src="../images/cover.jpg" alt="Portada" width="100px" height="100px">
                         </div>
@@ -70,7 +72,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="contenedorconcierto__lista">
+                    <div class="contenedorvideo__lista__ul__li">
                         <div>
                            <img src="../images/cover.jpg" alt="Portada" width="100px" height="100px">
                         </div>
@@ -80,7 +82,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="contenedorconcierto__lista">
+                    <div class="contenedorvideo__lista__ul__li">
                         <div>
                            <img src="../images/cover.jpg" alt="Portada" width="100px" height="100px">
                         </div>
@@ -90,7 +92,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="contenedorconcierto__lista">
+                    <div class="contenedorvideo__lista__ul__li">
                         <div>
                            <img src="../images/cover.jpg" alt="Portada" width="100px" height="100px">
                         </div>
@@ -100,7 +102,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="contenedorconcierto__lista">
+                    <div class="contenedorvideo__lista__ul__li">
                         <div>
                            <img src="../images/cover.jpg" alt="Portada" width="100px" height="100px">
                         </div>
@@ -114,7 +116,6 @@
 
         </section>
     </main>
-
     <footer class="footer">
         <div class="footer__paragraph">
             <p>© 2023</p> 
@@ -137,8 +138,5 @@
             <a href="https://www.youtube.com"><i class="bi bi-youtube"></i></a></div>
         </div>
     </footer>
-
-
-   
 </body>
 </html>

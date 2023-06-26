@@ -15,7 +15,7 @@
 
     <title>Home Ukelele by Oct!</title>
 </head>
-<body>
+<body class="colorfondo">
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -50,26 +50,31 @@
           </div>
         </div>
     </nav> <!--Termina el navbar-->
-    <main class="portada"> 
+    <main class="container portada"> 
         <section class="portada__imagen"><!--Foto-->
-            <img src="/images/gracias_contenido.png" alt="Imagen de bienvenida" width="512" height="384">
+            <img class="portada__imagen__img" src="/images/bienvenidos.png" alt="Imagen de bienvenida" width="500" height="500">
         </section>
         <section class="portada__texto"> <!--Texto más input de regístrate-->
-            <h1>¡A tocar ukelele!</h1>
-            <p>¡Bienvenido a nuestra página dedicada al fascinante mundo del ukelele! Estamos encantados de tenerte aquí, listo para explorar y sumergirte en los encantadores sonidos de este instrumento de cuerdas hawaiano. Si estás buscando aprender armonía, ritmo, melodía y escalas de música, has llegado al lugar adecuado.</p>
-            <p>En nuestra plataforma, encontrarás una amplia gama de recursos y lecciones diseñadas especialmente para ayudarte a desarrollar tus habilidades musicales con el ukelele. Ya sea que seas un principiante absoluto o tengas experiencia previa, nuestro objetivo es brindarte un enfoque completo para que puedas dominar estos elementos clave de la música..</p>
-            <div class="input-group mt-3">
-                <span class="input-group-text">Regístrate</span>
-                <input type="email" aria-label="email" class="form-control" placeholder=" ingresa tu correo">
-              </div>
-
+            <div>
+                <h1>¡A tocar ukelele!</h1>
+            </div>
+            <div>
+                <p>¡Bienvenido a nuestra página dedicada al fascinante mundo del ukelele! Estamos encantados de tenerte aquí, listo para explorar y sumergirte en los encantadores sonidos de este instrumento de cuerdas hawaiano. Si estás buscando aprender armonía, ritmo, melodía y escalas de música, has llegado al lugar adecuado.</p>
+                <p>En nuestra plataforma, encontrarás una amplia gama de recursos y lecciones diseñadas especialmente para ayudarte a desarrollar tus habilidades musicales con el ukelele. Ya sea que seas un principiante absoluto o tengas experiencia previa, nuestro objetivo es brindarte un enfoque completo para que puedas dominar estos elementos clave de la música..</p>
+            </div>
+            <div class="portada__texto__registro">
+                <div class="input-group mt-3 mb-2">
+                    <span class="input-group-text">Regístrate</span>
+                    <input name="registro" type="email" aria-label="email" class="form-control" placeholder=" ingresa tu correo">
+                </div>
+                <div>
+                    <div class="mb-3 d-flex justify-content-end">
+                        <input name="Enviar" class="btn btn-dark" type="submit" value="Enviar">
+                    </div>
+                </div>
+            </div>
         </section>
-
-    </main>
-   
-    <section> <!--Sponsor   -->
-
-    </section>
+</main>
     <footer class="footer">
         <div class="footer__paragraph">
             <p>© 2023</p> 
