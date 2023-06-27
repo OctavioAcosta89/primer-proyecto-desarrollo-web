@@ -1,4 +1,7 @@
 /*Body*/
+h1,h2,h3,h4,i,p{
+    font-family: 'Roboto Condensed', sans-serif;
+}
 .colorfondo{
     background-color: $color5;
 }
@@ -81,10 +84,6 @@ i{
         transform: scale(1.2,1.2);
     }
 }
-/* Inputs*/
-.colorinput{
-    background-color: red;
-}
 
 /*Recursos adicionales tabla*/
 
@@ -100,7 +99,7 @@ i{
         border: 1px solid black;
         text-align: center;
     &:hover{
-        background-color: $color4;
+        background-color: $color3;
     }    
     }
 }
@@ -129,19 +128,12 @@ i{
             margin: 8px;
             &:hover{
                 border: 5px $color4 solid;
-                background-color: $color4;
+                background-color: $color3;
             }    
         }
     }
 
     }
-}
-
-.logroscompletados{
-    background-color: $color3;
-    padding: 5px;
-    border-radius: 20%;
-    
 }
 a:link{
     text-decoration: none;
@@ -153,11 +145,13 @@ a:link{
 
 .listasrepro{
     display: flex;
-&__img{
-    margin: 16px;
-    &:hover{
-        border: 5px red solid; /* acá va la animación */
-    }
+    &__img{
+        margin: 8px;
+        border: 8px solid $color5;
+        &:hover{
+            border-radius: 20px;
+            border: 8px $color3 solid;  
+        }
 }
 }
 .progresosYlogros{
@@ -167,26 +161,91 @@ a:link{
     "area2 area3"
     "area4 area5"
     "area6 area6";
+    margin: 16px;
     &__listas{
         grid-area: area1;
     }
     &__progresos{
         grid-area: area4;
+        padding-bottom: 32px;
+        padding-right: 32px;
+        padding-left: 32px;
+        margin-right: 8px;
+        background-color: $color4;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        /*
+        border-bottom: 1px black solid;
+        border-left: 1px black solid;
+        border-right: 1px black solid;
+        */
+        &__grupo{
+            margin-top: 8px;
+            margin-bottom: 24px;
+            
+        }
     }
     &__logros{
         grid-area: area5;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        background-color: $color4;
+        margin-left: 8px;
+        padding-bottom: 32px;
+        padding-left: 32px;
+        padding-right: 32px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        /*
+        border-bottom: 1px black solid;
+        border-left: 1px black solid;
+        border-right: 1px black solid;
+        */
+        &__columnas{
+            border-style: hidden;
+            &__logro{
+                margin: 8px;
+                
+            }
+
+        }
     }
     &__tituloPrg{
         grid-area:area2;
+        text-align: center;
+        background-color: $color4;
+        padding-top: 24px;
+        margin-top: 32px;
+        margin-right: 8px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        /*
+        border-top: 1px black solid;
+        border-left: 1px black solid;
+        border-right: 1px black solid;
+        */
+    
     }
     &__titulolist{
         grid-area: area3;
+        text-align: center;
+        background-color: $color4;
+        /*
+        border-top: 1px black solid;
+        border-left: 1px black solid;
+        border-right: 1px black solid;
+        */
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding-top: 24px;
+        margin-top: 32px;
+        margin-left: 8px;
+        
 
     }
-    
-    
+}
+.logrocompletado{
+    border-radius: 20%;
 }
 footer{
     grid-area: area6;

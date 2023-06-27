@@ -9,15 +9,16 @@
     <link rel="icon" type="image/x-icon" href="../images/icono.ico">
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    
-    
-    
     <!--Boostrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <!--Titulo-->
     <title>Home Ukelele by Oct!</title>
 </head>
-<body>
+<body class="colorfondo">
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -52,7 +53,7 @@
           </div>
         </div>
     </nav> <!--Termina el navbar-->
-    <main class="progresosYlogros"> <!--Grid-->
+    <main class="progresosYlogros colorfondo"> <!--Grid-->
         <section class="progresosYlogros__listas"><!--Listas-->
             <div>
                 <h2>Listas de reproducción</h2>
@@ -76,32 +77,32 @@
             <h4> Progresos en las listas</h4>
         </div>
         <div class="progresosYlogros__titulolist">
-            <h2>Logros</h2>
+            <h4>Logros</h4>
         </div>
 
         <section class="progresosYlogros__progresos"><!--progress-->
             
             <section class=""><!--Progresos-->
                 
-                <div class="pyl__progresos__grupo">
+                <div class="progresosYlogros__progresos__grupo">
                     <div><h5>Lista de melodía</H5></div>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                             <div class="progress-bar progresscolor" style="width: 75%">75%</div>
                           </div>
                 </div>
-                <div class="pyl__progresos__grupo">
+                <div class="progresosYlogros__progresos__grupo">
                     <div><h5>Lista de armonía</H5></div>
                         <div class="progress" role="progressbar " aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                             <div class="progress-bar progresscolor" style="width: 35%">35%</div>
                           </div>
                 </div>
-                <div class="pyl__progresos__grupo">
+                <div class="progresosYlogros__progresos__grupo">
                     <div><h5>Lista de escalas</H5></div>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                             <div class="progress-bar progresscolor" style="width: 50%">50%</div>
                           </div>
                 </div>
-                <div class="pyl__progresos__grupo">
+                <div class="progresosYlogros__progresos__grupo">
                     <div><h5>Lista de ritmo</H5></div>
                         <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                             <div class="progress-bar progresscolor" style="width: 25%">25%</div>
@@ -109,93 +110,91 @@
                 </div>
             </div>
         </section>
-
         </section>
-        <section class="progresosYlogros__logros"><!--Logramiento-->
-            
+        <section class="progresosYlogros__logros"><!--Logros-->
             <div>
-                <div>
-                    <i class="bi bi-boombox-fill logroscompletados" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="Principiante: Avanzaste 25% en todas las Listas de reproducción."></i>
+                <div class="progresosYlogros__logros__columnas__logro logrocompletado">
+                    <i class="bi bi-boombox-fill" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="Principiante: Avanzaste 25% en todas las Listas de reproducción."></i>
+                </div>
+                <div class="progresosYlogros__logros__columnas__logro logrocompletado">
+                    <i class="bi bi-vinyl-fill tip"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="Maestro de acordes mayores: Dominas los acordes mayores."></i>
                 </div>
                 <div>
-                    <i class="bi bi-vinyl-fill tip logroscompletados"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="Maestro de acordes mayores: Dominas los acordes mayores."></i>
+                    <i class="bi bi-music-player-fill progresosYlogros__logros__columnas__logro logrocompletado"  style="color:#55859e" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="No es un tambor: Ahora sabes de ritmo y percusión con el ukelele."></i>
                 </div>
-                <div>
-                    <i class="bi bi-music-player-fill logroscompletados"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="No es un tambor: Ahora sabes de ritmo y percusión con el ukelele."></i>
+                <div class="progresosYlogros__logros__columnas__logro logrocompletado">
+                    <i class="bi bi-collection-play-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="Explorador Melódico: Ahora sabes las melodías populares en el ukelele."></i>
                 </div>
-                <div>
-                    <i class="bi bi-collection-play-fill logroscompletados"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="Explorador Melódico: Ahora sabes las melodías populares en el ukelele."></i>
-                </div>
-                <div>
+                <div class="progresosYlogros__logros__columnas__logro logrocompletado">
                     <i class="bi bi-ear-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="Sonido armónico: Ya dominas los principios básicos de armonía en el ukelele."></i>
                 </div>
             </div>
             <div>
-                <div>
-                    <i class="bi bi-earbuds logroscompletados"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="Maestro de escalas: Avanzaste el 100% de la lista de escalas musicales."></i>
+                <div class="progresosYlogros__logros__columnas__logro logrocompletado">
+                    <i class="bi bi-earbuds"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="Maestro de escalas: Avanzaste el 100% de la lista de escalas musicales."></i>
                 </div>
-                <div>
+                <div class="progresosYlogros__logros__columnas__logro logrocompletado">
                     <i class="bi bi-fast-forward-btn-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="Tocando en conjunto: participaste en un jam session virtual con otros músicos."></i>
                 </div>
-                <div>
+                <div class="progresosYlogros__logros__columnas__logro">
                     <i class="bi bi-file-pdf-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="Ukulele virtuoso: Hiciste el 75% de las listas, eres nivel avanzado de interpretación del ukelele."></i>
                 </div>
-                <div>
+                <div class="progresosYlogros__logros__columnas__logro">
                     <i class="bi bi-film"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="Compositor creativo: Otorgada al componer y presentar una canción original utilizando el ukelele."></i>
                 </div>
-                <div>
+                <div class="progresosYlogros__logros__columnas__logro">
                     <i class="bi bi-fire"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="Rey o Reina del Strumming: dominas diversas técnicas de strumming, como el downstroke, upstroke, rasgueos rítmicos, etc."></i>
                 </div>
 
             </div>
             <div>
-                <div>
+                <div class="progresosYlogros__logros__columnas__logro">
                     <i class="bi bi-headphones"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="Maestro de Acordes Extendidos: Sabes tocar acordes más complejos y extendidos.."></i>
                 </div>
-                <div>
+                <div class="progresosYlogros__logros__columnas__logro">
                     <i class="bi bi-mic-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="Explorador de Estilos: Viste todas nuestras masterclass, ahora dominas varios estilos musicales."></i>
                 </div>
-                <div>
+                <div class="progresosYlogros__logros__columnas__logro">
                     <i class="bi bi-music-note-beamed"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i>
                 </div>
-                <div>
+                <div class="progresosYlogros__logros__columnas__logro">
                     <i class="bi bi-music-note"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i>
                 </div>
-                <div>
-                    <i class="bi bi-play-circle-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i>
+                <div class="progresosYlogros__logros__columnas__logro">
+                    <i class="bi bi-play-circle-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO--."></i>
                 </div>
             </div>
             <div>
-                <div>
+                <div class="progresosYlogros__logros__columnas__logro">
                     <i class="bi bi-rocket-takeoff-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i>
                 </div>
-                <div>
+                <div class="progresosYlogros__logros__columnas__logro logrocompletado">
                     <i class="bi bi-tv-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i>
                 </div>
-                <div>
+                <div class="progresosYlogros__logros__columnas__logro">
                     <i class="bi bi-balloon-heart-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i>
                 </div>
-                <div>
+                <div class="progresosYlogros__logros__columnas__logro">
                     <i class="bi bi-camera-video-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i>
                 </div>
-                <div>
-                    <i class="bi bi-cash-coin logroscompletados"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="Aporte para el aprendizaje: Hiciste una donación a nuestra plataforma"></i>
+                <div class="progresosYlogros__logros__columnas__logro">
+                    <i class="bi bi-cash-coin"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="Aporte para el aprendizaje: Hiciste una donación a nuestra plataforma"></i>
                 </div>
             </div>
             <div>
-                <div>
+                <div class="progresosYlogros__logros__columnas__logro">
                     <i class="bi bi-camera-reels-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="luz"></i>
                 </div>
-                <div>
+                <div class="progresosYlogros__logros__columnas__logro">
                     <i class="bi bi-arrow-through-heart-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i>
                 </div>
-                <div>
+                <div class="progresosYlogros__logros__columnas__logro">
                     <i class="bi bi-calendar2-date-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="LOGRASTE ALGO."></i>
                 </div>
-                <div>
+                <div class="progresosYlogros__logros__columnas__logro">
                     <i class="bi bi-camera-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="Estrella del Fingerpicking: Desarrollaste habilidades avanzadas en el fingerpicking."></i>
                 </div>
-                <div>
+                <div class="progresosYlogros__logros__columnas__logro">
                     <i class="bi bi-chat-heart-fill"data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"data-bs-title="Maestro del Ukelele: Completaste el 100% de las listas, ya eres en un referente del ukelele."></i>
                 </div>
             </div>

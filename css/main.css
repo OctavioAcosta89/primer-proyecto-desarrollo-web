@@ -1,17 +1,21 @@
-@charset "UTF-8";
 /*Body*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+h1, h2, h3, h4, i, p {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
 .colorfondo {
-  background-color: #e3c0ff;
+  background-color: #f6f9f9;
 }
 
 main {
-  background-color: #e3c0ff;
+  background-color: #f6f9f9;
 }
 
 /*Index*/
 .portada {
   display: flex;
-  background-color: #e3c0ff;
+  background-color: #f6f9f9;
 }
 .portada__imagen {
   margin-top: 8px;
@@ -32,7 +36,7 @@ main {
   margin-right: 8px;
   margin-left: -20px;
   padding: 16px;
-  background-color: #9687ed;
+  background-color: #e7e7db;
 }
 .portada__texto__registro {
   display: flex;
@@ -70,7 +74,7 @@ i {
 .concert {
   border-radius: 20px;
   margin: 16px;
-  background-color: #9687ed;
+  background-color: #e7e7db;
 }
 .concert__titulo {
   margin: 16px;
@@ -81,11 +85,6 @@ i {
 }
 .concert__portada:hover {
   transform: scale(1.2, 1.2);
-}
-
-/* Inputs*/
-.colorinput {
-  background-color: red;
 }
 
 /*Recursos adicionales tabla*/
@@ -103,7 +102,7 @@ i {
   text-align: center;
 }
 .Tablarecursos__filas:hover {
-  background-color: #9687ed;
+  background-color: #d8c7b9;
 }
 
 /*conciertouno*/
@@ -111,7 +110,7 @@ i {
   display: flex;
   justify-content: end;
   margin: 8%;
-  background-color: #e3c0ff;
+  background-color: #f6f9f9;
 }
 .contenedorvideo__rep {
   flex: 100%;
@@ -134,19 +133,13 @@ i {
   margin: 8px;
 }
 .contenedorvideo__lista__ul__li:hover {
-  border: 5px #9687ed solid;
-  background-color: #9687ed;
-}
-
-.logroscompletados {
-  background-color: #575599;
-  padding: 5px;
-  border-radius: 20%;
+  border: 5px #e7e7db solid;
+  background-color: #d8c7b9;
 }
 
 a:link {
   text-decoration: none;
-  color: #000014;
+  color: #55859e;
 }
 
 /*Perfil*/
@@ -154,32 +147,97 @@ a:link {
   display: flex;
 }
 .listasrepro__img {
-  margin: 16px;
+  margin: 8px;
+  border: 8px solid #f6f9f9;
 }
 .listasrepro__img:hover {
-  border: 5px red solid; /* acá va la animación */
+  border-radius: 20px;
+  border: 8px #d8c7b9 solid;
 }
 
 .progresosYlogros {
   display: grid;
   grid-template-areas: "area1 area1" "area2 area3" "area4 area5" "area6 area6";
+  margin: 16px;
 }
 .progresosYlogros__listas {
   grid-area: area1;
 }
 .progresosYlogros__progresos {
   grid-area: area4;
+  padding-bottom: 32px;
+  padding-right: 32px;
+  padding-left: 32px;
+  margin-right: 8px;
+  background-color: #e7e7db;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  /*
+  border-bottom: 1px black solid;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+  */
+}
+.progresosYlogros__progresos__grupo {
+  margin-top: 8px;
+  margin-bottom: 24px;
 }
 .progresosYlogros__logros {
   grid-area: area5;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  background-color: #e7e7db;
+  margin-left: 8px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  /*
+  border-bottom: 1px black solid;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+  */
+}
+.progresosYlogros__logros__columnas {
+  border-style: hidden;
+}
+.progresosYlogros__logros__columnas__logro {
+  margin: 8px;
 }
 .progresosYlogros__tituloPrg {
   grid-area: area2;
+  text-align: center;
+  background-color: #e7e7db;
+  padding-top: 24px;
+  margin-top: 32px;
+  margin-right: 8px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  /*
+  border-top: 1px black solid;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+  */
 }
 .progresosYlogros__titulolist {
   grid-area: area3;
+  text-align: center;
+  background-color: #e7e7db;
+  /*
+  border-top: 1px black solid;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+  */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-top: 24px;
+  margin-top: 32px;
+  margin-left: 8px;
+}
+
+.logrocompletado {
+  border-radius: 20%;
 }
 
 footer {
