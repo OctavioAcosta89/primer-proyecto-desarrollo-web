@@ -1,5 +1,5 @@
 /*Body*/
-h1,h2,h3,h4,i,p{
+h1,h2,h3,h4,h5,h6,i,p{
     font-family: 'Roboto Condensed', sans-serif;
 }
 .colorfondo{
@@ -12,6 +12,8 @@ main{
 .portada{
     display: flex;
     background-color: $color5;
+    margin-top: 16px;
+    margin-bottom: 16px;
 
     &__imagen{
         margin-top: 8px;
@@ -19,6 +21,8 @@ main{
         margin-left: 8px;
         margin-right: 0px;
         &__img{
+            width:500px; 
+            height:500px;
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
             border-top-right-radius: 0px;
@@ -79,6 +83,10 @@ i{
     &__portada{
         margin: 1.5%;
         border-color: none;
+        &__img{
+        width: 200px;
+        height: 200px;
+        }
     }
     &__portada:hover{
         transform: scale(1.2,1.2);
@@ -86,6 +94,11 @@ i{
 }
 
 /*Recursos adicionales tabla*/
+.tituloRecursos{
+    margin-left: 16px;
+    margin-top: 16px;
+
+}
 
 .Tablarecursos{
     display: flex;
@@ -141,8 +154,6 @@ a:link{
 }
 
 /*Perfil*/
-
-
 .listasrepro{
     display: flex;
     &__img{
@@ -165,6 +176,7 @@ a:link{
     &__listas{
         grid-area: area1;
     }
+        
     &__progresos{
         grid-area: area4;
         padding-bottom: 32px;
@@ -174,11 +186,7 @@ a:link{
         background-color: $color4;
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
-        /*
-        border-bottom: 1px black solid;
-        border-left: 1px black solid;
-        border-right: 1px black solid;
-        */
+       
         &__grupo{
             margin-top: 8px;
             margin-bottom: 24px;
@@ -196,11 +204,7 @@ a:link{
         padding-right: 32px;
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
-        /*
-        border-bottom: 1px black solid;
-        border-left: 1px black solid;
-        border-right: 1px black solid;
-        */
+    
         &__columnas{
             border-style: hidden;
             &__logro{
@@ -219,22 +223,12 @@ a:link{
         margin-right: 8px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        /*
-        border-top: 1px black solid;
-        border-left: 1px black solid;
-        border-right: 1px black solid;
-        */
     
     }
     &__titulolist{
         grid-area: area3;
         text-align: center;
         background-color: $color4;
-        /*
-        border-top: 1px black solid;
-        border-left: 1px black solid;
-        border-right: 1px black solid;
-        */
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         padding-top: 24px;
@@ -250,4 +244,9 @@ a:link{
 footer{
     grid-area: area6;
 }
-
+/*Contacto*/
+.fondocontacto{
+    background-color: $color3;
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
