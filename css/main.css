@@ -75,9 +75,14 @@ i {
   color: black;
 }
 
+.tituloConciertomaster {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
 .concert {
   border-radius: 20px;
-  margin: 16px;
+  margin: 32px;
   background-color: #e7e7db;
 }
 .concert__titulo {
@@ -86,6 +91,8 @@ i {
 .concert__portada {
   margin: 1.5%;
   border-color: none;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .concert__portada__img {
   width: 200px;
@@ -119,24 +126,33 @@ i {
 }
 
 /*conciertouno*/
+.tituloconcierto {
+  text-align: center;
+  margin-top: 24px;
+}
+
 .contenedorvideo {
   display: flex;
-  justify-content: end;
-  margin: 8%;
+  margin-top: 16;
+  margin-left: 16px;
   background-color: #f6f9f9;
 }
 .contenedorvideo__rep {
-  flex: 100%;
+  flex: 75%;
 }
 .contenedorvideo__rep__divvideo {
-  display: flex;
-  justify-content: center;
+  border-top: 1px #55859e solid;
+  padding: 24px;
 }
 .contenedorvideo__lista {
   width: 50%;
   height: 350px;
-  float: right;
+  float: left;
   overflow: auto;
+  border-left: 1px #55859e solid;
+  border-radius: 20px;
+  margin-right: 64px;
+  margin-bottom: 16px;
 }
 .contenedorvideo__lista__ul {
   list-style: none;
@@ -242,6 +258,17 @@ footer {
   background-color: #d8c7b9;
   border-radius: 20px;
   margin-bottom: 16px;
+}
+
+.volver {
+  display: inline-block;
+  margin-left: 32px;
+  margin-bottom: 16px;
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #d8c7b9;
+  background-color: #e7e7db;
+  text-decoration: none;
 }
 
 /*Index*/

@@ -73,9 +73,14 @@ i{
     margin: 5px;
     color: black;
 }
+.tituloConciertomaster{
+    margin-top: 24px;
+    margin-bottom: 16px;
+
+}
 .concert{
     border-radius: 20px;
-    margin: 16px;
+    margin: 32px;
     background-color: $color4;
     &__titulo{
         margin: 16px;
@@ -83,6 +88,8 @@ i{
     &__portada{
         margin: 1.5%;
         border-color: none;
+        margin-top: 32px;
+        margin-bottom: 32px ;
         &__img{
         width: 200px;
         height: 200px;
@@ -117,23 +124,32 @@ i{
     }
 }
 /*conciertouno*/
+.tituloconcierto{
+    text-align: center;
+    margin-top:24px;
+
+}
 .contenedorvideo{
     display: flex;
-    justify-content: end;
-    margin: 8%;
+    margin-top: 16;
+    margin-left: 16px;
     background-color: $color5;
     &__rep{
-        flex: 100%;
+        flex: 75%;
         &__divvideo{
-            display: flex;
-            justify-content: center;
+            border-top: 1px $color1 solid;
+            padding: 24px;   
         }  
     }
     &__lista{
     width: 50%;
     height: 350px;
-    float: right;
+    float: left;
     overflow: auto;
+    border-left: 1px $color1 solid;
+    border-radius: 20px;
+    margin-right: 64px;
+    margin-bottom: 16px;
     &__ul{
         list-style: none;
         &__li{
@@ -152,7 +168,6 @@ a:link{
     text-decoration: none;
     color: $color1;
 }
-
 /*Perfil*/
 .listasrepro{
     display: flex;
@@ -249,4 +264,15 @@ footer{
     background-color: $color3;
     border-radius: 20px;
     margin-bottom: 16px;
+}
+.volver{
+    display: inline-block;
+    margin-left: 32px;
+    margin-bottom: 16px;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid $color3;
+    background-color: $color4;
+    text-decoration: none;
+
 }
