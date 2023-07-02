@@ -1,5 +1,10 @@
 /*Body*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 h1, h2, h3, h4, h5, h6, i, p {
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -89,7 +94,8 @@ i {
   margin: 16px;
 }
 .concert__portada {
-  margin: 1.5%;
+  margin-left: 16px;
+  margin-right: 16px;
   border-color: none;
   margin-top: 32px;
   margin-bottom: 32px;
@@ -280,20 +286,6 @@ footer {
     max-width: 100%;
     height: auto;
   }
-  .concert {
-    width: 100vw;
-    background-color: #e7e7db;
-  }
-  .concert__titulo {
-    margin: 16px;
-  }
-  .concert__portada {
-    border-color: none;
-  }
-  .concert__portada__img {
-    width: 75px;
-    height: 75px;
-  }
 }
 /*Perfil*/
 @media (max-width: 768px) {
@@ -369,4 +361,96 @@ footer {
     margin-top: 32px;
     margin-left: 8px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+@media (max-width: 768px) {
+  .concert {
+    border-radius: 20px;
+    margin: 16px;
+    background-color: #e7e7db;
+  }
+  .concert__titulo {
+    margin: 16px;
+  }
+  .concert__portada {
+    margin-left: 8px;
+    margin-right: 8px;
+    border-color: none;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .concert__portada__img {
+    width: 75px;
+    height: 75px;
+  }
+  .concert__portada:hover {
+    transform: scale(1.2, 1.2);
+  }
+}
+@media (max-width: 576px) {
+  h6 {
+    font-size: 6px;
+  }
+}
+@media (max-width: 768px) {
+  /*conciertouno*/
+  .contenedorvideo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16;
+    margin-left: 8px;
+    background-color: #f6f9f9;
+  }
+  .contenedorvideo__rep__divvideo {
+    padding: 24px;
+  }
+  .contenedorvideo__rep__divvideo iframe {
+    width: 320;
+    height: auto;
+  }
+  .contenedorvideo__lista {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+    float: left;
+    overflow: auto;
+    margin-bottom: 16px;
+  }
+  .contenedorvideo__lista__ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+  .contenedorvideo__lista__ul__li {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+  }
+  a:link {
+    text-decoration: none;
+    color: #55859e;
+  }
+}
+/*
+@media(max-width: 325px){
+    .contenedorvideo__rep__divvideo{
+        width: 325px;
+        height: auto;
+    }
+
+}
+@media(max-width: 375px){
+    .contenedorvideo__rep__divvideo{
+        width: 375px;
+        height: auto;
+    }
+
+}
+@media(max-width: 425px){
+    .contenedorvideo__rep__divvideo{
+        width:425px ;
+        height: auto;
+    }
+
+}
+*//*# sourceMappingURL=main.css.map */

@@ -1,4 +1,8 @@
 /*Body*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
 h1,h2,h3,h4,h5,h6,i,p{
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -86,7 +90,8 @@ i{
         margin: 16px;
     }
     &__portada{
-        margin: 1.5%;
+        margin-left: 16px;
+        margin-right: 16px;
         border-color: none;
         margin-top: 32px;
         margin-bottom: 32px ;
