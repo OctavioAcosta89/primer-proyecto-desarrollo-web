@@ -123,74 +123,80 @@
 
 
 }
-@media(max-width: 576px){
-    h6{
-        font-size: 6px;
-    }
-}
-@media(max-width: 768px){
-    /*conciertouno*/
-.contenedorvideo{
-    display: flex;
-    flex-direction: column;
-    margin-top: 16;
-    margin-left: 8px;
-    background-color: $color5;
-    &__rep{
-        &__divvideo{
-            padding: 24px; 
-            iframe{
-                width: 320;
-                height: auto;
-            }  
-        }  
-    }
-    &__lista{
-        display: flex;
-        flex-direction: row;
-    width: 100vw;
-    height: auto;
-    float: left;
-    overflow: auto;
-    margin-bottom: 16px;
-    &__ul{
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        &__li{
+/*conciertouno*/
+    @media (min-width: 320px) and (max-width:576px) {
+        .contenedorvideo{
             display: flex;
             flex-direction: column;
-            margin: 8px;   
-        }
+            margin-top: 16;
+            margin-left: 8px;
+            background-color: $color5;
+            &__rep{
+                &__divvideo{
+                    padding: 24px; 
+                    iframe{
+                        width: 280px;
+                        height:156px;
+                    }  
+                }  
+            }
+            &__lista{
+                display: flex;
+                flex-direction: row;
+            width: 100vw;
+            height: auto;
+            float: left;
+            overflow: auto;
+            margin-bottom: 16px;
+            &__ul{
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                max-width: 100vw;
+                &__li{
+                    display: flex;
+                    flex-direction: column;
+                    margin: 8px;   
+                }
+            }
+            }
+        }   
     }
-
+    @media (min-width: 577px) and (max-width:768px) {
+        .contenedorvideo{
+            display: flex;
+            flex-direction: column;
+            margin-top: 16;
+            margin-left: 8px;
+            background-color: $color5;
+            &__rep{
+                &__divvideo{
+                    padding: 24px; 
+                    iframe{
+                        width: 560px;
+                        height:315px;
+                    }  
+                }  
+            }
+            &__lista{
+                display: flex;
+                flex-direction: row;
+            width: 100vw;
+            height: auto;
+            float: left;
+            overflow: auto;
+            margin-bottom: 16px;
+            &__ul{
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                max-width: 100vw;
+                &__li{
+                    display: flex;
+                    flex-direction: column;
+                    margin: 8px;   
+                }
+            }
+            }
+        }  
     }
-}
-a:link{
-    text-decoration: none;
-    color: $color1;
-}
-}
-/*
-@media(max-width: 325px){
-    .contenedorvideo__rep__divvideo{
-        width: 325px;
-        height: auto;
-    }
-
-}
-@media(max-width: 375px){
-    .contenedorvideo__rep__divvideo{
-        width: 375px;
-        height: auto;
-    }
-
-}
-@media(max-width: 425px){
-    .contenedorvideo__rep__divvideo{
-        width:425px ;
-        height: auto;
-    }
-
-}
-*/
